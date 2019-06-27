@@ -13,7 +13,71 @@
 		965CCFF622C304ED00A8CE8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 965CCFF422C304ED00A8CE8A /* Main.storyboard */; };
 		965CCFF822C304EE00A8CE8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 965CCFF722C304EE00A8CE8A /* Assets.xcassets */; };
 		965CCFFB22C304EE00A8CE8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 965CCFF922C304EE00A8CE8A /* LaunchScreen.storyboard */; };
+		965CD00B22C3052200A8CE8A /* MyKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 965CD00922C3052200A8CE8A /* MyKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		965CD00E22C3052200A8CE8A /* MyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965CD00722C3052100A8CE8A /* MyKit.framework */; };
+		965CD00F22C3052200A8CE8A /* MyKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 965CD00722C3052100A8CE8A /* MyKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		965CD01B22C3054000A8CE8A /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965CD01A22C3054000A8CE8A /* IntentHandler.swift */; };
+		965CD02422C3054000A8CE8A /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965CD02322C3054000A8CE8A /* IntentsUI.framework */; };
+		965CD02722C3054000A8CE8A /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965CD02622C3054000A8CE8A /* IntentViewController.swift */; };
+		965CD02A22C3054000A8CE8A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 965CD02822C3054000A8CE8A /* MainInterface.storyboard */; };
+		965CD02E22C3054000A8CE8A /* ShortcutIntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 965CD02122C3054000A8CE8A /* ShortcutIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		965CD03122C3054000A8CE8A /* ShortcutIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 965CD01822C3054000A8CE8A /* ShortcutIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		965CD03A22C3055F00A8CE8A /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 965CD03922C3055F00A8CE8A /* Intents.intentdefinition */; settings = {ATTRIBUTES = (codegen, ); }; };
+		965CD03B22C3056C00A8CE8A /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 965CD03922C3055F00A8CE8A /* Intents.intentdefinition */; settings = {ATTRIBUTES = (codegen, ); }; };
+		965CD03C22C3056C00A8CE8A /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 965CD03922C3055F00A8CE8A /* Intents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
+		965CD03D22C3056D00A8CE8A /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 965CD03922C3055F00A8CE8A /* Intents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
+		965CD04022C30A5800A8CE8A /* DoFooIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965CD03F22C30A5800A8CE8A /* DoFooIntentHandler.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		965CD00C22C3052200A8CE8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 965CCFE322C304ED00A8CE8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 965CD00622C3052100A8CE8A;
+			remoteInfo = MyKit;
+		};
+		965CD02C22C3054000A8CE8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 965CCFE322C304ED00A8CE8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 965CD02022C3054000A8CE8A;
+			remoteInfo = ShortcutIntentUI;
+		};
+		965CD02F22C3054000A8CE8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 965CCFE322C304ED00A8CE8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 965CD01722C3054000A8CE8A;
+			remoteInfo = ShortcutIntent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		965CD01322C3052200A8CE8A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				965CD00F22C3052200A8CE8A /* MyKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		965CD03822C3054000A8CE8A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				965CD03122C3054000A8CE8A /* ShortcutIntent.appex in Embed App Extensions */,
+				965CD02E22C3054000A8CE8A /* ShortcutIntentUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		965CCFEB22C304ED00A8CE8A /* ShortcutsVolumeBug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShortcutsVolumeBug.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +88,20 @@
 		965CCFF722C304EE00A8CE8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		965CCFFA22C304EE00A8CE8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		965CCFFC22C304EE00A8CE8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		965CD00722C3052100A8CE8A /* MyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		965CD00922C3052200A8CE8A /* MyKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyKit.h; sourceTree = "<group>"; };
+		965CD00A22C3052200A8CE8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		965CD01822C3054000A8CE8A /* ShortcutIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShortcutIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		965CD01A22C3054000A8CE8A /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		965CD01C22C3054000A8CE8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		965CD02122C3054000A8CE8A /* ShortcutIntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShortcutIntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		965CD02322C3054000A8CE8A /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		965CD02622C3054000A8CE8A /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		965CD02922C3054000A8CE8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		965CD02B22C3054000A8CE8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		965CD03922C3055F00A8CE8A /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		965CD03E22C306D000A8CE8A /* ShortcutsVolumeBug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShortcutsVolumeBug.entitlements; sourceTree = "<group>"; };
+		965CD03F22C30A5800A8CE8A /* DoFooIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoFooIntentHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +109,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				965CD00E22C3052200A8CE8A /* MyKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		965CD00422C3052100A8CE8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		965CD01522C3054000A8CE8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		965CD01E22C3054000A8CE8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				965CD02422C3054000A8CE8A /* IntentsUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +142,10 @@
 			isa = PBXGroup;
 			children = (
 				965CCFED22C304ED00A8CE8A /* ShortcutsVolumeBug */,
+				965CD00822C3052200A8CE8A /* MyKit */,
+				965CD01922C3054000A8CE8A /* ShortcutIntent */,
+				965CD02522C3054000A8CE8A /* ShortcutIntentUI */,
+				965CD02222C3054000A8CE8A /* Frameworks */,
 				965CCFEC22C304ED00A8CE8A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +154,9 @@
 			isa = PBXGroup;
 			children = (
 				965CCFEB22C304ED00A8CE8A /* ShortcutsVolumeBug.app */,
+				965CD00722C3052100A8CE8A /* MyKit.framework */,
+				965CD01822C3054000A8CE8A /* ShortcutIntent.appex */,
+				965CD02122C3054000A8CE8A /* ShortcutIntentUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +164,7 @@
 		965CCFED22C304ED00A8CE8A /* ShortcutsVolumeBug */ = {
 			isa = PBXGroup;
 			children = (
+				965CD03E22C306D000A8CE8A /* ShortcutsVolumeBug.entitlements */,
 				965CCFEE22C304ED00A8CE8A /* AppDelegate.swift */,
 				965CCFF022C304ED00A8CE8A /* SceneDelegate.swift */,
 				965CCFF222C304ED00A8CE8A /* ViewController.swift */,
@@ -67,7 +176,56 @@
 			path = ShortcutsVolumeBug;
 			sourceTree = "<group>";
 		};
+		965CD00822C3052200A8CE8A /* MyKit */ = {
+			isa = PBXGroup;
+			children = (
+				965CD00922C3052200A8CE8A /* MyKit.h */,
+				965CD00A22C3052200A8CE8A /* Info.plist */,
+				965CD03922C3055F00A8CE8A /* Intents.intentdefinition */,
+				965CD03F22C30A5800A8CE8A /* DoFooIntentHandler.swift */,
+			);
+			path = MyKit;
+			sourceTree = "<group>";
+		};
+		965CD01922C3054000A8CE8A /* ShortcutIntent */ = {
+			isa = PBXGroup;
+			children = (
+				965CD01A22C3054000A8CE8A /* IntentHandler.swift */,
+				965CD01C22C3054000A8CE8A /* Info.plist */,
+			);
+			path = ShortcutIntent;
+			sourceTree = "<group>";
+		};
+		965CD02222C3054000A8CE8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				965CD02322C3054000A8CE8A /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		965CD02522C3054000A8CE8A /* ShortcutIntentUI */ = {
+			isa = PBXGroup;
+			children = (
+				965CD02622C3054000A8CE8A /* IntentViewController.swift */,
+				965CD02822C3054000A8CE8A /* MainInterface.storyboard */,
+				965CD02B22C3054000A8CE8A /* Info.plist */,
+			);
+			path = ShortcutIntentUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		965CD00222C3052100A8CE8A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				965CD00B22C3052200A8CE8A /* MyKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		965CCFEA22C304ED00A8CE8A /* ShortcutsVolumeBug */ = {
@@ -77,15 +235,72 @@
 				965CCFE722C304ED00A8CE8A /* Sources */,
 				965CCFE822C304ED00A8CE8A /* Frameworks */,
 				965CCFE922C304ED00A8CE8A /* Resources */,
+				965CD01322C3052200A8CE8A /* Embed Frameworks */,
+				965CD03822C3054000A8CE8A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				965CD00D22C3052200A8CE8A /* PBXTargetDependency */,
+				965CD02D22C3054000A8CE8A /* PBXTargetDependency */,
+				965CD03022C3054000A8CE8A /* PBXTargetDependency */,
 			);
 			name = ShortcutsVolumeBug;
 			productName = ShortcutsVolumeBug;
 			productReference = 965CCFEB22C304ED00A8CE8A /* ShortcutsVolumeBug.app */;
 			productType = "com.apple.product-type.application";
+		};
+		965CD00622C3052100A8CE8A /* MyKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 965CD01022C3052200A8CE8A /* Build configuration list for PBXNativeTarget "MyKit" */;
+			buildPhases = (
+				965CD00222C3052100A8CE8A /* Headers */,
+				965CD00322C3052100A8CE8A /* Sources */,
+				965CD00422C3052100A8CE8A /* Frameworks */,
+				965CD00522C3052100A8CE8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyKit;
+			productName = MyKit;
+			productReference = 965CD00722C3052100A8CE8A /* MyKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		965CD01722C3054000A8CE8A /* ShortcutIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 965CD03522C3054000A8CE8A /* Build configuration list for PBXNativeTarget "ShortcutIntent" */;
+			buildPhases = (
+				965CD01422C3054000A8CE8A /* Sources */,
+				965CD01522C3054000A8CE8A /* Frameworks */,
+				965CD01622C3054000A8CE8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShortcutIntent;
+			productName = ShortcutIntent;
+			productReference = 965CD01822C3054000A8CE8A /* ShortcutIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		965CD02022C3054000A8CE8A /* ShortcutIntentUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 965CD03222C3054000A8CE8A /* Build configuration list for PBXNativeTarget "ShortcutIntentUI" */;
+			buildPhases = (
+				965CD01D22C3054000A8CE8A /* Sources */,
+				965CD01E22C3054000A8CE8A /* Frameworks */,
+				965CD01F22C3054000A8CE8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShortcutIntentUI;
+			productName = ShortcutIntentUI;
+			productReference = 965CD02122C3054000A8CE8A /* ShortcutIntentUI.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +313,15 @@
 				ORGANIZATIONNAME = "Jason Ji";
 				TargetAttributes = {
 					965CCFEA22C304ED00A8CE8A = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					965CD00622C3052100A8CE8A = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					965CD01722C3054000A8CE8A = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					965CD02022C3054000A8CE8A = {
 						CreatedOnToolsVersion = 11.0;
 					};
 				};
@@ -116,6 +340,9 @@
 			projectRoot = "";
 			targets = (
 				965CCFEA22C304ED00A8CE8A /* ShortcutsVolumeBug */,
+				965CD00622C3052100A8CE8A /* MyKit */,
+				965CD01722C3054000A8CE8A /* ShortcutIntent */,
+				965CD02022C3054000A8CE8A /* ShortcutIntentUI */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +358,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		965CD00522C3052100A8CE8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		965CD01622C3054000A8CE8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		965CD01F22C3054000A8CE8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				965CD02A22C3054000A8CE8A /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,11 +389,57 @@
 			files = (
 				965CCFF322C304ED00A8CE8A /* ViewController.swift in Sources */,
 				965CCFEF22C304ED00A8CE8A /* AppDelegate.swift in Sources */,
+				965CD03B22C3056C00A8CE8A /* Intents.intentdefinition in Sources */,
 				965CCFF122C304ED00A8CE8A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		965CD00322C3052100A8CE8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				965CD04022C30A5800A8CE8A /* DoFooIntentHandler.swift in Sources */,
+				965CD03A22C3055F00A8CE8A /* Intents.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		965CD01422C3054000A8CE8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				965CD03C22C3056C00A8CE8A /* Intents.intentdefinition in Sources */,
+				965CD01B22C3054000A8CE8A /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		965CD01D22C3054000A8CE8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				965CD03D22C3056D00A8CE8A /* Intents.intentdefinition in Sources */,
+				965CD02722C3054000A8CE8A /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		965CD00D22C3052200A8CE8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 965CD00622C3052100A8CE8A /* MyKit */;
+			targetProxy = 965CD00C22C3052200A8CE8A /* PBXContainerItemProxy */;
+		};
+		965CD02D22C3054000A8CE8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 965CD02022C3054000A8CE8A /* ShortcutIntentUI */;
+			targetProxy = 965CD02C22C3054000A8CE8A /* PBXContainerItemProxy */;
+		};
+		965CD03022C3054000A8CE8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 965CD01722C3054000A8CE8A /* ShortcutIntent */;
+			targetProxy = 965CD02F22C3054000A8CE8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		965CCFF422C304ED00A8CE8A /* Main.storyboard */ = {
@@ -161,6 +456,14 @@
 				965CCFFA22C304EE00A8CE8A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		965CD02822C3054000A8CE8A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				965CD02922C3054000A8CE8A /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -283,7 +586,9 @@
 		965CD00022C304EE00A8CE8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ShortcutsVolumeBug/ShortcutsVolumeBug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2GPQ8GE99T;
 				INFOPLIST_FILE = ShortcutsVolumeBug/Info.plist;
@@ -301,7 +606,9 @@
 		965CD00122C304EE00A8CE8A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ShortcutsVolumeBug/ShortcutsVolumeBug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2GPQ8GE99T;
 				INFOPLIST_FILE = ShortcutsVolumeBug/Info.plist;
@@ -311,6 +618,138 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JYJApps.ShortcutsVolumeBug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		965CD01122C3052200A8CE8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2GPQ8GE99T;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MyKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JYJApps.MyKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		965CD01222C3052200A8CE8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2GPQ8GE99T;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MyKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JYJApps.MyKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		965CD03322C3054000A8CE8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GPQ8GE99T;
+				INFOPLIST_FILE = ShortcutIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JYJApps.ShortcutsVolumeBug.ShortcutIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		965CD03422C3054000A8CE8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GPQ8GE99T;
+				INFOPLIST_FILE = ShortcutIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JYJApps.ShortcutsVolumeBug.ShortcutIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		965CD03622C3054000A8CE8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GPQ8GE99T;
+				INFOPLIST_FILE = ShortcutIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JYJApps.ShortcutsVolumeBug.ShortcutIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		965CD03722C3054000A8CE8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GPQ8GE99T;
+				INFOPLIST_FILE = ShortcutIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JYJApps.ShortcutsVolumeBug.ShortcutIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -333,6 +772,33 @@
 			buildConfigurations = (
 				965CD00022C304EE00A8CE8A /* Debug */,
 				965CD00122C304EE00A8CE8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		965CD01022C3052200A8CE8A /* Build configuration list for PBXNativeTarget "MyKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				965CD01122C3052200A8CE8A /* Debug */,
+				965CD01222C3052200A8CE8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		965CD03222C3054000A8CE8A /* Build configuration list for PBXNativeTarget "ShortcutIntentUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				965CD03322C3054000A8CE8A /* Debug */,
+				965CD03422C3054000A8CE8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		965CD03522C3054000A8CE8A /* Build configuration list for PBXNativeTarget "ShortcutIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				965CD03622C3054000A8CE8A /* Debug */,
+				965CD03722C3054000A8CE8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
